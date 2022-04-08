@@ -2,62 +2,76 @@
     padding: 0;
     margin: 0;
 }
+
+h1{
+    margin: 20px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
 main{
-	background-color: #4a4b4b;
+	background-color: #333333;
 	margin: auto;
 	width: max-content;
 	height: max-content;
-	margin: 0 auto;
+	margin: 5px auto;
 	border-radius: 20px;
 	padding: 10px;
 }
-.once{
-    margin-top: 15px;
-    width: 60px;
-    height: 50px;
-}
 header{
-	background-color: #d1e0e0;
+    background-color: #e2eeee;
 	width: 100%;
-	height: 70px;
-	border-radius: 20px;	
+	height: 30px;
+    max-width: 172px;
+	border-radius: 10px;	
 	color: #000000;
-	text-align: right;      
+    box-shadow: 0px 0px 2px 2px #6e6e6e;    
+    text-align: center;
 }
 #screen{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;       
+    font-size: 18px;
+    font-family: monospace; 
 }
 table{
-	background-color: #cf6f00;
+    font-family: monospace;
+    color: #e6e6e6;
+    width: max-content;
+	background-color: #b9b9b9;    
 	margin: 15px auto;
+    margin-bottom: 0px;
+    padding: 6px 0px;
 	border-radius: 20px;    
+    border-spacing: 16px 5px;
+    box-shadow: 0px 0px 2px 2px #646464; 
 }
+
+/*Botões*/
 td{
-	width: 55px;
-	height: 65px;
-    padding: 3px;
+    background-color: #252525;
+    width: 20px;
+	height: 20px;
+    padding: 8px;   
 	text-align: center;
+    border-radius: 30px;
+    box-shadow: 0px 0px 1px 2px #dddddd ;  
 }
-input{    
-    width: 50px;
-    height: 50px;
-    text-decoration: none;
-    background-color: #ffffff;
-    border-style: none;
-    border-radius: 10px;
+td:hover{
+    transition: ease-in-out 0.1s;
+    cursor: pointer;
+    font-size: 17px; 
+    font-weight: bold;
+    color: #333333;
+    background-color: #bef1ff;
+    box-shadow: 0px 0px 1px 2px #242424;
+}
+td:active{    
+    background-color: #3dd5ff;
 }
 
-
-
-input:active{
-    border-radius: 40px;
-    transition: linear 0.3s;
-    box-shadow: 0px 0px 2px #424242;    
+/*Botão ON*/
+.btnOn:hover{
+    background-color: #ffbebe;
+    box-shadow: 0px 0px 1px 2px #242424;
 }
-.once:active{
-    background-color: #2a9600;
-	border-radius: 20px;
-    transition: initial 0.3s;
-    box-shadow: 0px 0px 2px #424242;
+.btnOn:active{    
+    background-color: #ff3d3d;
 }

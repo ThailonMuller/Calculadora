@@ -6,55 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
     <link rel="stylesheet" href="calc.css">
+    <script src="calc.js"></script>
 </head>
 <body>
-    
-    
     <h1>Calculadora</h1>
         <main>
 
-            <header id="screen"> Em desenvolvimento</header>            
-            <div>
-                <tr>
-                    <td><input class="once" type="button" value="ON"></td>
-                    <td><input class="once" type="button" value="CE"></td>
-                </tr>
-            </div>
+            <header id="screen">0</header>           
             
             <table>                                
                 <tr>
-                    <td><input type="button" value="7"></td>
-                    <td><input type="button" value="8"></td>
-                    <td><input type="button" value="9"></td>
-                    <td><input type="button" value="%"></td>
-                    <td><input type="button" value="√ "></td>
+                    <td class="btnOn" onclick="clearScr()">ON</td>
+                    <td onclick="sendNum('*0.01')">%</td>
+                    <td onclick="sendNum('/')">/</td>                    
                 </tr>                
                 <tr>
-                    <td><input type="button" value="4"></td>
-                    <td><input type="button" value="5"></td>
-                    <td><input type="button" value="6"></td>
-                    <td><input type="button" value="*"></td>
-                    <td><input type="button" value="/"></td>
+                    <td onclick="sendNum('+')">+</td>
+                    <td onclick="sendNum('-')">-</td>
+                    <td onclick="sendNum('*')">X</td>
                 </tr>
                 <tr>
-                    <td><input type="button" value="1"></td>
-                    <td><input type="button" value="2"></td>
-                    <td><input type="button" value="3"></td>
-                    <td><input type="button" value="+"></td>
-                    <td><input type="button" value="-"></td>
+                    <td onclick="sendNum('7')">7</td>
+                    <td onclick="sendNum('8')">8</td>
+                    <td onclick="sendNum('9')">9</td>
                 </tr>
                 <tr>
-                    <td><input type="button" value="0"></td>
-                    <td><input type="button" value="."></td>
-                    <td><input type="button" value="="></td>
-                </tr>                
+                    <td onclick="sendNum('4')">4</td>
+                    <td onclick="sendNum('5')">5</td>
+                    <td onclick="sendNum('6')">6</td>
+                </tr>
+                <tr>
+                    <td onclick="sendNum('1')">1</td>
+                    <td onclick="sendNum('2')">2</td>
+                    <td onclick="sendNum('3')">3</td>
+                </tr>
+                <tr>
+                    <td onclick="sendNum('.')">.</td>
+                    <td onclick="sendNum('0')">0</td>
+                    <td onclick="equalTo()">=</td>
+                </tr>              
             </table>
         </main>
-
-        <a href="https://ichi.pro/pt/como-criar-uma-calculadora-basica-usando-html-css-e-javascript-138546586976480" target="_blank">link da calculadora de referencia</a>
-        
-    
-
-    
-</body>
+    </body>
 </html>
